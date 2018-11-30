@@ -1,0 +1,15 @@
+<html>
+  <body>
+  <h1> person name</h1>
+  <input type="text" id="personsName">
+  <button onclick="storageTest()">Click Here</button>
+  <script>
+    function storageTest(){
+      
+      var x=document.getElementById("personsName").value;//finds the value when button is clicked
+      localStorage.setItem("Name",x);// set the value
+      location.href="page2.html";//transferes user to page 2
+    }
+  </script>
+  </body>
+</html>

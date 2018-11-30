@@ -1,0 +1,14 @@
+<html>
+  <body>
+  <h1> place</h1>
+  <input type="text" id="setting">
+  <button onclick="storageTest()">Click Here</button>
+  <script>
+    function storageTest(){
+      var x=document.getElementById("setting").value;//finds the value when button is clicked
+      localStorage.setItem("place",x);// set the value
+      location.href="page4.html";//transferes user to page 2
+    }
+  </script>
+  </body>
+</html>

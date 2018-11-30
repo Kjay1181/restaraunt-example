@@ -1,0 +1,14 @@
+<html>
+  <body>
+  <h1> adverb</h1>
+  <input type="text" id="adverb">
+  <button onclick="storageTest()">Click Here</button>
+  <script>
+    function storageTest(){
+      var x=document.getElementById("adverb").value;//finds the value when button is clicked
+      localStorage.setItem("word",x);// set the value
+      location.href="page3.html";//transferes user to page 2
+    }
+  </script>
+  </body>
+</html>
