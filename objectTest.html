@@ -1,0 +1,47 @@
+<html>
+  <body>
+ 
+  
+  <button onclick="addObject()">Add</button>
+  
+  <h1 id="putName">enter name</h1>
+  <input type="text" id="nameInput">
+  <h1 id="putPrice">enter  toppings</h1>
+   <input type="text" id="toppingInput">
+   <h1 id="putToppings">enter price</h1>
+    <input type="text" id="priceInput">
+  
+    <script>
+      var Burger={
+  "name":"BillyBurger",
+  "price":15,
+  "quantity":1,
+  "toppings":[ "cheese","lettuce","tomato", "toenails", "burger"
+    ]
+}
+
+var pizza={
+  "name":"RickyPizza",
+    "price":15,
+  "quantity":3,
+  "toppings":[ "cheese","pepperoni","peper", "pineapples", "tomatosauce"
+    ]
+}
+function addObject(){
+   var salad={};
+  var x= document.getElementById("nameInput").value;
+   var y= document.getElementById("toppingInput").value;
+    var z= document.getElementById("priceInput").value;
+   salad["name"]=x;
+   salad["toppings"]=y;
+   salad["price"]=z;
+  window.alert("your salad is called"+" "+salad.name+" "+"with" + " " +salad.toppings+ " "+"only costing you"+" "+ salad.price);
+}
+    </script>
+  
+  
+  
+  
+  
+  </body>
+</html>
